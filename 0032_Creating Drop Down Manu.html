@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Select, Option, Datalist and Optgroup Tags</title>
+        <style>
+            BODY{background-color:pink;}
+        </style>
+    </head>
+    <body>
+        <h1>Creating Drop Down Menu</h1>
+        <p>We have three techniques to create drop down Menu.</p>
+        <h2>First Method</h2>
+        <p>Use 'select' tag, and inside it, use 'option' tag.</p>
+        <p>If we use this technique, first option automatically remain visible.</p>
+        DOC. TYPE:<select><option>GOVT. DOCUMENT</option>><option>PASSPORT</option><option>IDENTITY CARD</option>
+        <option>UTILITY CARD</option><option>LICENSE</option></select>
+        <h2>Second Method</h2>
+        <p>Use attribute 'list' for input tag and pass an id to 'datalist' tag, thereafter use option tag within 
+        datalist tag.  In that case, attribute 'list' and 'id' must be same.</p>
+        <p>If we use this technique, when we move our curser onto that field, drop down list will appear.</p>
+        COUNTRY: <input list="country"><datalist id="country"><option>Pakistan</option><option>India</option>
+        <option>USA</option><option>UK</option></datalist><br><br>
+        <h2>Third Method</h2>
+        <p>If we have to choose a number of different items under different catagories, we use 'select' tag.</p>
+        <p>To do so, an attribute 'multiple' is used inside 'select' tag.</p>
+        <p>To make different groups, we use 'optgroup' tag within 'select' tag, and inside it, 'option' tag.</p>
+        <p>To highligh group's name, we use a attribute 'label' 'inside optgroup' tag.</p>
+        <p>To disable an option tag or optgroup tag, we use attribute 'disabled' in that tag.</p>
+        <p>To select the multiple options, always use 'ctrl' button.</p>
+        <select multiple><optgroup label="PRODUCTS" disabled>
+        <option>ELECTRIC</option><option>GAS</option><option>SOLAR</option><option>ADVANCE</option><option>MANUAL</option>
+        </optgroup>
+        <optgroup label="GROCERY">
+        <option>EATABLE</option><option>UTENSILS</option><option>CLOTHS</option><option>SHOWS</option><option>TOYS</option>
+        </optgroup>
+        <optgroup label="FRUITS">
+        <option>APPLE</option><option>MANGO</option><option>ORANGE</option><option>BANANA</option><option>GRAPES</option>
+        </optgroup>
+        <optgroup label="VEGETABLES"><option>POTATO</option><option disabled>LADY FINGER</option><option>TOMATO</option>
+        <option>ONION</option><option>LEMON</option>
+        </optgroup>
+        <optgroup label="GENERAL"><option>SUGAR</option><option>TEA</option><option>COFFEE</option><option>MILK</option>
+        <option>RICE</option>
+        </optgroup></select>
+    </body>
+</html>

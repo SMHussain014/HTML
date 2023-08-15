@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Taking data outside from a Form</title>
+        <style>
+            BODY{
+                background-color:pink;
+            }
+            FORM{
+                width:900px;
+                padding:5px;
+                margin:auto;
+                background-color:blue;
+                border-radius:20px;
+                font-size:16px;
+                color:white;
+            }
+            input [type="text"]{
+            width:100%;
+            padding:20px;
+            font-size:14px;}
+            input[type="submit"], input[type="reset"]{
+            padding:5px;
+            font-size:18px;
+            color:darkgreen;}
+            input[type="password"], input[type="email"]{
+            padding:2px;
+            font-size:12px;}
+        input[type="radio"], input[type="checkbox"], input[type="option"]{
+            padding:3px;}
+        textarea{
+            background-color:gray;
+            width:95%;
+            font-size:12px;
+            margin:auto;}
+        </style>
+    </head>
+    <body>
+    <h1>How to take data from outside a form</h1>
+    <p>We can take data even from outside a form, to do this, we have to create an attribute 'id' in form tag.</p>
+    <p>To call that id, we use an attribute 'form' and assigned it the same title as of id.</p>
+    <p>We can send our data onto two servers also.</p>
+    <p>For that we need extra 'action' attribute and 'submit' button.</p>
+    <form id="add_1" id="add_2" autocomplete="on" action="server or file" method="post">
+        <p>SUBMISSION FORM</p><br>
+        <fieldset><legend>PERSONAL INFO</legend>
+            <label for="ni">FIRST NAME:</label>
+            <input id="n1" type="text" name="first_name" maxlength="15" autofocus>
+            <label for="n2">MIDDLE NAME:</label>
+            <input id="n2" type="text" name="middle_name" maxlength="15">
+            <label for="n3">LAST NAME:</label>
+            <input id="n3" type="text" name="last_name" maxlength="15"><br><br>
+            <label for="bd">Date of Birth:</label>
+            <input id="bd" type="date" name="DoB">
+            GENDER:
+            <label for="m">MALE</label>
+            <input id="m" type="radio" name="gender">
+            <label for="f">FEMALE</label>
+            <input id="f" type="radio" name="gender">
+            <label for="country">NATIONALITY:</label>
+            <input id="country" list="nation" name="country_name">
+            <datalist id="nation">
+            <option>Pakistan</option><option>India</option><option>Bangladesh</option><option>Sri Lanka</option>
+            <option>USA</option><option>UK</option><option>Canada</option><option>Australia</option>
+            <option>New Zealand</option></datalist><br><br>
+            <label for="govt_doc">DOC. TYPE:</label>
+            <select id="govt_doc"><option>GOVT. DOCUMENT</option>><option>PASSPORT</option><option>IDENTITY CARD</option>
+            <option>UTILITY CARD</option><option>LICENSE</option></select>
+            <label for="identity">IDENTITY NO:</label>
+            <input id="identity" type="tel" name="identity_number" placeholder="Write your identity number ...">
+        </fieldset>
+        <fieldset><legend>CONTACT INFO</legend>
+            <label for="mail">E-MAIL:</label>
+            <input id="mail" type="email" name="email_address"><br><br>
+            <label for="pw">PASSWORD:</label>  
+            <input id="pw" type="password" name="password" required>
+            <label for="cpw">CONFIRM PASSWORD:</label>  
+            <input id="cpw" type="password" name="password" required><br><br>
+            <label for="ph">CONTACT NO:</label>
+            <input id="ph" type="tel" name="user_phone" maxlength="20" multiple>
+            <label for="web">WEBSITE:</label>
+            <input id="web" type="url" name="web_address" multiple>
+        </fieldset>
+        <fieldset><legend>GENERAL</legend>
+            YOUR INTERESTS:<br>
+            <label for="hb1">NET SURFING</label><input id="hb1" type="checkbox" name="hobbies">
+            <label for="hb2">WEB DESIGNING</label><input id="hb2" type="checkbox" name="hobbies">
+            <label for="hb3">DATA HANDLING</label><input id="hb3" type="checkbox" name="hobbies">
+            <label for="hb4">ARTICLE WRITING</label><input id="hb4" type="checkbox" name="hobbies">
+            <label for="hb5">BLOG WRITING</label><input id="hb5" type="checkbox" name="hobbies"><br><br>
+            <label for="pht">UPLOAD PICTURE:</label>  
+            <input id="pht" type="file" name="upload_photo" accept="image/*" multiple><br><br>
+            <label for="intro">ABOUT YOU:</label><br>
+            <textarea id="intro" name ="comments" rows=5 cols=30 placeholder="write about you ... "></textarea><br><br>
+            <input type="RESET" value="reset">
+            <input type="SUBMIT" value="submit to server-1">
+            <input type="SUBMIT" value="submit to server-2">
+        </fieldset>
+    </form>
+            YOUR FEEDBACK: <input type="text" name="feedback" form="add_1">
+            YOUR SUGGESTION:<input type="text" name="suggestion" form="add_2">
+    </body>
+</html>

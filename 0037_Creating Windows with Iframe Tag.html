@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creating window with iframe Tag</title>
+        <style>BODY{background-color:pink;}</style>
+        <base href="C:\down_load\down_pic\"></base>
+    </head>
+    <body>
+    <h1>How to use 'iframe' Tag</h1>
+    <p>We can create new window with the use of iframe tag.</p>
+    <p>All types of files, i.e. jpg, png, gif, docx, pdf & html etc., can be made visible in new frame.</p>
+    <p>To display an image, use 'img src' attribute, the value of which is the full path of that image.</p>
+    <p>To display a file or directory, use 'src' attribute, the value of which is the full path of that 
+    file or directory.</p>
+    <p>The width and height can be adjusted of an iframe by using these attributes.</p>
+    <iframe img src = "rainbow.jpg" width="210" height="130"></iframe>
+    <iframe img src = "colour_bubble.jpg" width="210" height="130"></iframe>
+    <iframe img src = "leaf.jpg" width="210" height="130"></iframe><br><br>
+    <iframe img src = "water_molecule_picture.jpg" width="210" height="130"></iframe>
+    <iframe img src = "water_molecule_chemistry.jpg" width="210" height="130"></iframe>
+    <iframe img src = "water_molecule_graphical.jpg" width="210" height="130"></iframe><br><br>
+    <iframe src="C:\Doc-File\pakistan_culture.pdf" width="210" height="130"></iframe>
+    <iframe src="C:\HTML-COURSE\p011.html" width="210" height="130"></iframe>
+    <h1>Techniques to use iframe Tag</h1>
+    <p>There are three techniques to use iframe Tag.</p>
+    <p>The first method is to make a hyperlink of a file or image and target it to the desired iframe.</p>
+    <p>To call that file or image in the iframe, use 'name' or 'id' attribute inside iframe tag.</p>
+    <h2><u>First Method</u></h2>
+    <a href="C:\Gallery" target="frame-1"><h3>GALLERY</h3></a><br>
+    <iframe name="frame-1" width="210" height="130"></iframe>
+    <br><br>
+    <p>The second method is to call directly an image or file inside an iframe for that use 'img src' or 
+    'src' attribute within iframe tag.</p>
+    <p>To restrict an end user to utilize an existing hyperlink found within a file, use attribute
+    'sandbox' in iframe tag.</p>
+    <h2><u>Second Method</u></h2>
+    <iframe src="C:\HTML-COURSE\p012.html" width="210" height="130" sandbox="allow-same-origin"></iframe>
+    <iframe src="C:\HTML-COURSE\p012.html" width="210" height="130" sandbox></iframe>
+    <p>To display a message in iframe tag for end user, use attribute 'srcdoc', the value of which is 
+    the desired message, which is only changeable by a programmer of that web-page.</p>
+    <h2><u>Third Method</u></h2>
+    <iframe srcdoc="<h3 align=center>Write for Us</h3><p>Hi!</p>This is my test text." width="210" 
+    height="130"></iframe>
+    </body>
+</html>

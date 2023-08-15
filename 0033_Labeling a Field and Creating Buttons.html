@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Labeling Fields, Creating Buttons and Dialog Box</title>
+        <style>BODY{background-color:pink;}</style>
+    </head>
+    <body>
+    <h1>Create Fields with Labels</h1>
+    <p>A field as well as a button can be labeled by using 'label' tag.</p>
+    <p>At first, write the title of a field within 'label' tag.</p> 
+    <p>Thereafter, use attribute 'for' within opening label tag and provide to attribute 'for' a suitable title.</p>
+    <p>In 'input' tag, use attribute 'id' and provide it the same title as of attribute 'for'.</p>
+    <form>
+    <fieldset><legend>PERSONAL INFO</legend>
+    <label for="ni">FIRST NAME:</label>
+    <input id="n1" type="text" name="first_name" value="Write your first name here ..." autofocus>
+    <label for="n2">MIDDLE NAME:</label>
+    <input id="n2" type="text" name="middle_name" value="Write your middle name here ...">
+    <label for="n3">LAST NAME:</label>
+    <input id="n3" type="text" name="last_name" value="Write your last name here ..."><br><br>
+    <label for="bd">Date of Birth:</label>
+    <input id="bd" type="date" name="DoB">
+    GENDER:
+    <label for="m">MALE</label>
+    <input id="m" type="radio" name="gender">
+    <label for="f">FEMALE</label>
+    <input id="f" type="radio" name="gender">
+    <label for="country">NATIONALITY:</label>
+    <input id="country" list="nation" name="country_name">
+    <datalist id="nation">
+    <option>Pakistan</option><option>India</option><option>Bangladesh</option><option>Sri Lanka</option>
+    <option>USA</option><option>UK</option><option>Canada</option><option>Australia</option><option>New Zealand</option>
+    </datalist><br><br>
+    <label for="govt_doc">DOC. TYPE:</label>
+    <select id="govt_doc"><option>GOVT. DOCUMENT</option>><option>PASSPORT</option><option>IDENTITY CARD</option>
+    <option>UTILITY CARD</option><option>LICENSE</option></select>
+    <label for="identity">IDENTITY NO:</label>
+    <input id="identity" type="tel" name="identity_number" value="Write your identity number ..."></fieldset>
+    <fieldset><legend>CONTACT INFO</legend>
+    <label for="mail">E-MAIL:</label>
+    <input id="mail" type="email" name="email_address"><br><br>
+    <label for="pw">PASSWORD:</label>  
+    <input id="pw" type="password" name="password" required>
+    <label for="cpw">CONFIRM PASSWORD:</label>  
+    <input id="cpw" type="password" name="password" required><br><br>
+    <label for="ph">CONTACT NO:</label>
+    <input id="ph" type="tel" name="user_phone" maxlength="20" multiple>
+    <label for="web">WEBSITE:</label>
+    <input id="web" type="url" name="web_address" multiple></fieldset>
+    <fieldset><legend>GENERAL</legend>
+    YOUR INTERESTS:<br>
+    <label for="hb1">NET SURFING</label><input id="hb1" type="checkbox" name="hobbies">
+    <label for="hb2">WEB DESIGNING</label><input id="hb2" type="checkbox" name="hobbies">
+    <label for="hb3">DATA HANDLING</label><input id="hb3" type="checkbox" name="hobbies">
+    <label for="hb4">ARTICLE WRITING</label><input id="hb4" type="checkbox" name="hobbies">
+    <label for="hb5">BLOG WRITING</label><input id="hb5" type="checkbox" name="hobbies"><br><br>
+    <label for="pht">UPLOAD PICTURE:</label>  
+    <input id="pht" type="file" name="upload_photo" accept="image/*" multiple><br><br>
+    <label for="intro">ABOUT YOU:</label><br>
+    <textarea id="intro" name ="comments" rows=5 cols=30 placeholder="write about you ... "></textarea></fieldset>
+    </form>
+    <h1>How to create Buttons with Labels</h1>
+    <p>A button can be created in HTML by using 'button' tag.</p>
+    <p>Alternatively, a button can also be created by using 'input' element.</p>
+    <p>The types are 'reset', 'submit', 'cancel', 'demo' and 'image' etc.</p>
+    <p>Attribute 'name' in case of 'button' tag and attribute 'value' in case of 'input' element must be used.</p>
+    <p>Attribute 'onclick' with value 'alert' may be used to display messages.</p>
+    <p>A button may be made disable by using attribute 'disabled'.</p>
+    <p>A short-key may be associated with a button by using attribute 'accesskey' with its value.</p>
+    <p>To call a button, press alt plus suggested key.</p>
+    <h2>FIRST METHOD</h2>
+    <button type="reset" name="reset" onclick="alert('The Form has been reset.')">RESET</button>
+    <button type="submit" name="submit" onclick="alert('The Form has been submitted.')" accesskey="r">SUBMIT</button>
+    <button type="cancel" name="cancel" onclick="alert('The Form is cancelled.')">CANCEL</button>
+    <button type="demo" name="demo" onclick="alert('The button is disabled.')" disabled>DEMO</button>
+    <h2>SECOND METHOD</h2>
+    <form>
+    RESET: <input type="reset" value="RESET">
+    SUBMIT: <input type="submit" value="SUBMIT">
+    FORWARD:<input type="image" value="url" src="url address" alt="Forward Button" size="30">
+    BACK:<input type="image" value="url" src="url address" alt="Backward Button" size="30">
+    </form>
+    <h1>How to create Dialog Box</h1>
+    <p>A dialog box can br created by using 'dialog' tag.</p>
+    <p>It can br linked to open further inside dialog boxes.</p>
+    <p>Use 'dialog' tag to create pop-up button with attribute 'open'.</p>
+    <dialog open style="border-radius:10px; background-color:red; color:yellow;">Contact Us</dialog><br><br><br><br>
+    <dialog open style="border-radius:10px; color:red;">Chat with Us</dialog>
+    </body>
+</html>

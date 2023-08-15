@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio, Video, object, param and embed Tags</title>
+        <style>BODY{background-color:pink;}</style>
+    </head>
+    <body>
+    <h1>How to use Audio Tag</h1>
+    <p>An audio can be inserted in the web-page by using 'audio' tag.</p>
+    <p>To insert an audio, we have an empty element 'source' which is used inside 'audio' tag.</p>
+    <p>The 'source' tag has two attributes, i.e. src (the value of which is complete path and desired file_name with 
+    extension) and type (the value of which is type of audio with extension, separated by forward slash).</p>
+    <p>Audio Tag has certain attributes, i.e. controls, preload, muted, and autoplay.</p>
+    <p>Attribute 'controls' display the audio on screen.</p>
+    <p>Attribute 'preload' controls the control panel of audio. Its value should be 'audio', if it is set to 'none' 
+    control panel becomes disabled.</p>
+    <p>Attribute 'loop' repeats the audio time & again.</p>
+    <p>Attribute 'autoplay' runs the audio automatically as the webpage loads.</p>
+    <p>Attribute 'muted' is used to mute the audio.</p>
+    <audio controls preload="audio" muted>
+        <source src="C:\sound_audio\Limujii - November (freetouse.com).mp3" type="audio/mp3">
+   </audio>
+    <h1>How to use Video Tag</h1>
+    <p>A Video can also be inserted in the web-page as of audio. The only difference is the use of 'video' tag.</p>
+    <p>All the attributes used for 'audio' tag may be used for 'video' tag.</p>
+    <p>In case of 'video' tag, we have three more attributes, i.e. width, height and poster.</p>
+    <p>We know how to use width & height attributes. Attribute 'poster' demands full path like image.</p>
+    <video width="500px" controls poster="C:\down_load\down_pic\water_molecule_graphical.jpg">
+        <source src="File-Name.mp4" type="video/mp4">
+    </video>
+    <h1>How to use Object Tag</h1>
+    <p>If an audio or video file has same name, we can use 'object' tag also.</p>
+    <p>To provide path, use 'data' attribute and to specify file type, use 'type' attribute.</p>
+    <p>All the attributes used for audio and video tags may be used for object tag.</p>
+    <p>If we want to give name that file, use attribute 'name'.</p>
+    <p>Other than that object tag has also an inline tag called 'param'.</p>
+    <p>the element 'param' has three attributes namely name, value and style.</p>
+    <p>The attribute 'value' has only two values, i.e. true or false, which is used to run an audio or a video 
+    on autoplay mode.</p>
+    <p>If browser does not support 'param' inline tag, use attribute 'style', like style="display:none;"</p>
+    <!--
+    <object data="path/file_name.mp4" type="video/mp4" name="suggest_name">
+    -->
+    <h1>How to use Embed Tag</h1>
+    <p>This tag can be used like 'object' tag.</p>
+    <p>The only difference is use of 'src' attribute instead of 'data' attribute.</p>
+    <!--
+    <embed src=path/file_name type="audio/mp3">
+    -->
+</body>
+</html>

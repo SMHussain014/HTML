@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Table Tag</title></head>
+    <body style="background-color:seagreen;">
+        <h1>Create a Sample Table</h1>
+        <p>A table represents data in grid form. It consists of rows and columns.</p>
+        <p>Speaking simply, the table is a collection of rows and columns.</p>
+        <p>Every block of grid is known as 'table cell'. In HTML, a table is created row-wise.</p>
+        <p>To create a table, we have table tag, within which, we have three following tags:
+            <ul>
+                <li>Table Heading (th)</li>
+                <li>Table Row (tr)</li>
+                <li>Table Data (td)</li>
+            </ul></p>
+        <p>Table Heading (th) may be used for row heading as well as column heading.</p>
+        <p>HTML has 'caption' tag to provide captions for tables.</p>
+        <p>Before proceeding further, it would be appropriate if we understand two concepts.</p>
+        <p>The term 'padding' provides space within a cell, i.e. the space between border and text.</p>
+        <p>The term 'specing' provides space outside a cell, i.e. the space between the cells of a table.</p>
+        <p>In this topic, we are about to learn this technique.</p>
+        <h2>Table 1: Column-Wise Heading Table</h2>
+        <table border=10 bordercolor=blue bgcolor=yellow cellpadding=5 cellspacing=3 height=350 width=350>
+            <tr>
+                <th>Sr. No.</th><th>Name</th><th>Subject</th><th>Marks</th>
+            </tr>
+            <tr>
+                <td>01.</td><td>Muhammad</td><td>Maths</td><td>98</td>
+            </tr>
+            <tr>
+                <td>02.</td><td>Ali</td><td>Maths</td><td>95</td>
+            </tr>
+            <tr>
+                <td>03.</td><td>Fatima</td><td>Maths</td><td>85</td>
+            </tr>
+            <tr>
+                <td>04.</td><td>Hassan</td><td>Maths</td><td>84</td>
+            </tr>
+            <tr>
+                <td>05.</td><td>Hussain</td><td>Maths</td><td>82</td>
+            </tr>
+        </table>
+        <caption>Table (Sample-1: Without Control Upon Data Flow)</caption><br>
+        <p><big><b>Note that</b></big> we have used some old HTML attributes,<br>like border, bordercolor, cellpadding, cellspacing,
+        bgcolor, width and height.<br>In HTML5, we do all this with CSS.</p>
+        <h2>Table 2: Row-Wise and Column-Wise Heading Table</h2>
+        <table border=10 bordercolor=blue bgcolor=yellow cellpadding=5 cellspacing=3 height=350 width=400>
+            <tr align="left">
+                <th>Class Position</th><th>Name</th><th>Subject</th><th>Marks</th>
+            </tr>
+            <tr>
+                <th align="left">First</th><td>Muhammad</td><td>Maths</td><td>98</td>
+            </tr>
+            <tr>
+                <th align="left">Second</th><td>Ali</td><td>Maths</td><td>95</td>
+            </tr>
+            <tr>
+                <th align="left">Third</th><td>Fatima</td><td>Maths</td><td>85</td>
+            </tr>
+            <tr>
+                <th align="left">Forth</th><td>Hassan</td><td>Maths</td><td>84</td>
+            </tr>
+            <tr>
+                <th align="left">Fifth</th><td>Hussain</td><td>Maths</td><td>82</td>
+            </tr>
+        </table>
+        <caption>Table (Sample-2: Full Control Upon Data Flow)</caption>
+    </body>    
+</html>

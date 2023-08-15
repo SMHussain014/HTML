@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SVG, Map and Area Tags</title>
+        <style>BODY{background-color:pink;}</style>
+    </head>
+    <body>
+    <h1>How to create Scalable Vector Graphs with or without Canvas</h1>
+    <p>Vector graphs can be created in HTML by using 'svg' tag.</p>
+    <p>It is of three types/shapes, i.e. circle, rect and poly</p>
+    <p>To create circle, we need x-axis (cx), y-axis (cy) & radius (r) values.</p>
+    <p>To create rectangular, we need x, y, width and height values.</p>
+    <p>To create polygon, we need x, y and z values.</p>
+    <p>To make-up them, we may use CSS.</p>
+    <svg>
+        <circle cx="100" cy="100" r="50" fill="red"></circle><br><br>
+    </svg>
+    <svg width="100" height="100" style="border:5px solid gray;">
+        <circle cx="50" cy="50" r="40" fill="green"></circle><br><br>
+    </svg>
+    <svg width="100" height="100" style="border:10px solid gray;">
+        <circle cx="50" cy="50" r="40" fill="yellow" stroke-width="5px" stroke="red"></circle><br><br>
+    </svg>
+    <svg width="100" height="100" style="border:10px solid gray;">
+        <rect x="10" y="10" width="80" height="80"  fill="green" stroke-width="5px" stroke="red" rx="10"></rect>
+    </svg>
+    <h1>Map and Area Elements</h1>
+    <p>We can use a shape to work as hyperlink.</p>
+    <p>For that we use 'image' element. Inside it, attribute 'src' is used to call the image. Thereafter, we use another
+    attribute 'usemap' to assign a title to that image.</p>
+    <p>By the use of 'map' element, we call with attribute 'name' that image. The value of which is same as of 'usemap'
+    attribute.</p>
+    <p>Thereafter, we defines the area of that image by using 'area' element.</p>
+    <p>Element 'area' has two attributes, i.e. 'shape' attribute (its value is the type of svg) and 'coords' attribute 
+    which provides its co-ordinates.</p>
+    <img src="C:\Gallery\my_design.jpg" usemap="#math_shape">
+        <map name="math_shape">
+            <area shape="ract" coords="58, 60, 248, 208" href="C:\HTML-Course\0036A_Test_Page.html">
+            <area shape="circle" coords="150, 300, 75" href="C:\HTML-Course\0036A_Test_Page.html">
+            <area shape="poly" coords="423,56,532,298,313,297" href="C:\HTML-Course\0036A_Test_Page.html">
+</body>
+</html>

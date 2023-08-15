@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Colspan and Rowspan Attributes</title></head>
+    <body style="background-color:seagreen;">
+        <h1>How Column Span Works</h1>
+        <p>We can merge two or more table cells column-wise with the help of attribute 'colspan'.</p>
+        <p>This attribute functions on th as well as td tags. 
+        <h2>Table 1: Three Heads (Column-Wise)</h2>
+        <table border=10 bordercolor=red bgcolor=cream cellpadding=10 cellspacing=5 height=300 width=500>
+            <tr>
+                <th colspan = 6>Details of Students</th>
+            </tr>
+            <tr>
+                <th colspan = 3>Natural Science</th><th colspan = 3>Applied Science</th>
+            </tr>
+            <tr>
+                <th>Sr. No.</th><th>Name</th><th>Marks</th><th>Sr. No.</th><th>Name</th><th>Marks</th>
+            </tr>
+            <tr>
+                <td>01.</td><td>Muhammad</td><td>98</td><td>01.</td><td>Zain</td><td>95</td>
+            </tr>
+            <tr>
+                <td>02.</td><td>Ali</td><td>95</td><td>02.</td><td>Baqir</td><td>94</td>
+            </tr>
+            <tr>
+                <td>03.</td><td>Fatima</td><td>85</td><td>03.</td><td>Jaffar</td><td>91</td>
+            </tr>
+            <tr>
+                <td>04.</td><td>Hassan</td><td>84</td><td>04.</td><td>Mosa</td><td>87</td>
+            </tr>
+            <tr>
+                <td>05.</td><td>Hussain</td><td>82</td><td>05.</td><td>Raza</td><td>85</td>
+            </tr>
+        <caption>Table (Sample-1: Without Control Upon Data Flow)</caption>  
+        </table>
+        <h1>How Row Span Works</h1>
+        <p>We can merge two or more table cells row-wise with the help of attribute 'rowspan'.</p>
+        <p>This attribute also functions on th as well as td tags. 
+        <h2>Table 2: Three Heads (Column-Wise + Row-Wise)</h2>
+        <font color=white>
+        <table align=centre border=10 bordercolor=yellow bgcolor=green cellpadding=7 cellspacing=5 height=300 
+        width=600>
+        <caption>Table 2: Introducing a Hyper-link</caption>
+            <tr>
+                <th colspan = 5>Details of Students</th>
+                <th rowspan = 3 align=center>Click Download,<br>to see details.</th>
+            </tr>
+            <tr>
+                <th rowspan = 2 align=left>Sr.<br>No.</th>
+                <th colspan = 2>Natural Science</th><th colspan = 2>Applied Science</th>
+            </tr>
+            <tr>
+                <th align=left>Name</th><th align=left>Marks</th>
+                <th align=left>Name</th ><th align=left>Marks</th></th>
+            </tr>
+            <tr>
+                <td>01.</td><td>Muhammad</td><td>98</td><td>Zain</td><td>95</td>
+                <th align=center><a href="File-Name">Download</a></th>
+            </tr>
+            <tr>
+                <td>02.</td><td>Ali</td><td>95</td><td>Baqir</td><td>94</td>
+                <th align=center><a href="File-Name">Download</a></th>
+            </tr>
+            <tr>
+                <td>03.</td><td>Fatima</td><td>85</td><td>Jaffar</td><td>91</td>
+                <th align=center><a href="File-Name">Download</a></th>
+            </tr>
+            <tr>
+                <td>04.</td><td>Hassan</td><td>84</td><td>Mosa</td><td>87</td>
+                <th align=center><a href="File-Name">Download</a></th>
+            </tr>
+            <tr>
+                <td>05.</td><td>Hussain</td><td>82</td><td>Raza</td><td>85</td>
+                <th align=center><a href="File-Name">Download</a></th>
+            </tr>
+            </table>
+            </font>
+    </body>
+</html>

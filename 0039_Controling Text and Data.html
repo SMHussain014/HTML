@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BDO, BDI, Summary, Details and Data Tags</title>
+        <style>BODY{background-color:pink;}</style>
+    </head>
+    <body>
+    <h1>How to use bdo (Bi-directional Override) Tag</h1>
+    <p>This tag can reverse the direction of text.</p>
+    <p>It has an attribute 'dir', which has two values.</p>
+    <p>Its default value is ltr (left to right). Other value is rtl (right to left).</p>
+    <bdo dir="ltr">This is first test text</bdo><br>
+    <bdo dir="rtl">This is second test text</bdo>
+    <h1>How to use bdi (Bi-direction Isolate Element) Tag</h1>
+    <p>This tag is useful to tackle all languages which are written from right to left.</p>
+    <p>My Name is <bdi>"If name is written in Urdu, the direction will be accurate"</bdi>.</p>
+    <h1>How Summary and Details Tags work</h1>
+    <p>These tags are used in co-relation to each and other.</p>
+    <p>In HTML, 'summary' tag is used to show summary of anything.</p>
+    <p>This tag is always used within 'details' tag.</p>
+    <p>In HTML, 'details' tag is used to hide the details from the user for the time being.</p>
+    <p>It has only one attribute namely 'open'. if used, shows the details all the time.</p>
+    <details>
+    <summary>Tips to use Tools effectively</summary>
+    <h1>Tool Tips</h1>
+    <h4>Marquee Tag</h4>
+    <marquee direction="right">Syed Muhammad Hussain</marquee>
+    <h4>Paragraph Tag</h4>
+    <p>Syed Muhammad Hussain</p>
+    <h4>Anchor Tag</h4>
+    <a href=C:\Gallery\water_molecule_graphical.jpg>Syed Muhammad Hussain</a>
+    <h4>Paragraph Tag with attribute 'title'</h4>
+    <p title="Hello">Syed Muhammad Hussain</p>
+    <h4>Paragraph Tag with attribute 'contenteditable'</h4>
+    <p contenteditable="True">Syed Muhammad Hussain</p>
+    <h4>Formatting Tag</h4>
+    <p>Am I suppose to <del cite="verb was misleading" datetime="2023:07:15:12:35:40">do</del> <ins>not to do</ins> 
+    a wrong?</p>
+    <p>To see tips permanently, set 'details' tag as 'open'.</p>
+    </details>
+    <h1>How to use Data Tag</h1>
+    <p>In business, if we call an item by its name, it becomes quite difficult.</p>
+    <p>On the other hand, we want to hide this information for the end user.</p>
+    <p>In that case, we use 'data' tag which enables us to call items by code and hide these 
+    codes from user.</p>
+    <p>To do so, data tag has one attribute 'value'.</p>
+    <h2>List for Customers and Server</h2>
+        <ul>
+            <li><data value="1010"></data>Apple:120</li>
+            <li><data value="1011"></data>Orange:50</li>
+            <li><data value="1012"></data>Banana:120</li>
+            <li><data value="1013"></data>Cherry:140</li>
+            <li><data value="1014"></data>papaya:40</li>
+        </ul>
+    </body>
+</html>
