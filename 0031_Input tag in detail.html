@@ -1,109 +1,119 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Input Tag in detail</title>
-        <style>
-            BODY{background-color:pink;}
-        </style>
-    </head>
-    <body>
+<head>
+    <title>Input Tag in detail</title>
+    <style>
+        BODY {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
     <h1>Use of Input Tag</h1>
     <p>We already know that all the data is entered by the use of empty element called 'input'.</p>
     <p>Remember that 'input' tag works only within 'form' tag.</p>
     <h1>Types of Data</h1>
     <p>Now, we are about to discuss all the types of data which we may require from an user.</p>
     <form>
-    <h2>Data Type - Text</h2>
-    <p>This type is used for writing alphanumeric materials in single line.</p>
-    <p>It has two semantic attributes, namely 'name' and 'value'.</p>
-    <p>It has three more attributes, namely 'size', 'maxlength' and 'autofocus'.</p>
-    <p>Attribute 'name' tells the browser about the purpose of data.</p>
-    <p>Attribute 'value' has tow aspects, i.e. first facilitate the browser how to react and second tells the user what 
-    to write.</p>
-    <p>Attribute 'size' fix the size of input field, yet it may be done by using CSS now.</p>
-    <p>Attribute 'maxlength' fix the length of characters to be entered by user.</p>
-    <p>Attribute 'autofocus' focus the input field when a form load.</p>
-    <p>If we want a field mandatory, use 'required' attribute.</p>
-    NAME: <input type="text" name="user_name" value="write your name here..." maxlength="10" autofocus required>
-    <h2>Data Type - Textarea</h2>
-    <p>This type is used for writing alphanumeric materials in multiple lines. It has opening as well as closing tags.</p>
-    <p>It has three attributes, i.e. cols, rows and placeholder.</p>
-    <p>Attributes 'cols' and 'rows' used to specify the width and height of textarea field, yet yet it may be done by 
-    using CSS now.</p>
-    <p>Attribute 'placeholder' is used to write a message by the user. </p>
-    <textarea name ="comments" rows=5 cols=30 placeholder="write about you ... "></textarea>
-    <p>If attribute 'placeholder' is left empty no message will be shown.</p>
-    <textarea name ="comments" rows=5 cols=30 placeholder=" "></textarea>
-    <p>If attribute 'placeholder' is set for readonly, in that case, the user is unable to erase data inside it.</p>
-    <textarea name ="message" rows=5 cols=30 placeholder="This is only readable message." readonly></textarea>
-    <p>If attribute 'placeholder' is set for disabled, in that case, cursor has no effect on this area.</p>
-    <textarea name ="instruction" rows=5 cols=30 placeholder="Before submitting, read the instructions carefully." 
-    disabled></textarea>
-    <h2>Data Type - E-Mail</h2>
-    <p>This type is used to write e-mail.</p>
-    E-MAIL: <input type="email" name="email_address" size="30">
-    <h2>Data Type - Password</h2>
-    <p>This type is used to write password.</p>
-    PASSWORD: <input type="password" name="password" required>
-    <h2>Data Type - Tel</h2>
-    <p>This type is used to write telephone number.</p>
-    MOBILE: <input type="tel" name="user_phone" maxlength="13">
-    <h2>Data Type - URL</h2>
-    <p>This type is used to write the address of a web-site.</p>
-    WEBSITE: <input type="url" name="web_address">
-    <h2>Data Type - Date</h2>
-    <p>This type provides complete date.</p>
-    DoB: <input type="date" name="birth_date">
-    <h2>Data Type - Month</h2>
-    <p>This type provides the name of month with current year only.</p>
-    MOB: <input type="month" name="birth_month">
-    <h2>Data Type - Week</h2>
-    <p>This type provides the number of week of current year.</p>
-    WEEK: <input type="week" name="week">
-    <h2>Data Type - Time</h2>
-    <p>This type provides time.</p>
-    TIME: <input type="time" name="time">
-    <h2>Data Type - Date & Time</h2>
-    <p>This type provides date and time togather.</p>
-    DATE & TIME: <input type="datetime-local" name="submission_date"><br><br>
-    <h2>Data Type - Radio Button</h2>
-    <p>This type enables the user to choose one option.</p>
-    <p>To achieve the task, we have to make a group, i.e. attribute 'name' is made identical.</p>
-    GENDER: <br><br>
-    Male <input type="radio" name="user_gender" value="m">
-    Female <input type="radio" name="user_gender" value="f">
-    <p>Since Radio button is hard to use by a blind user, therefore, we must use semantic tag 'label'.</p>
-    <p>we have two methods, i.e. enclosed whole option with label tag or use 'for' attribute with 'id' attribute.</p>
-    <p>Remember that for and id must have same label or title.</p>
-    GENDER: <br><br>
-    <label for="Male">Male</label>
-    <input id="Male" type="radio" name="user_gender" value="m">
-    <label>Female <input type="radio" name="user_gender" value="f"></label>
-    <h2>Data Type - Checkbox Button</h2>
-    <p>If we have to choose multiple options amongst same items, checkbox type is used.</p>
-    <p>If we use attribute 'checked' that option will remain checked.</p>
-    <p>This option will work for that option before which it is used.</p>
-    LANGUAGE: <br><br>
-    Urdu <input type="checkbox" name="language"checked>
-    English <input type="checkbox" name="language">
-    Other <input type="checkbox" name="language">
-    <h2>Data Type - Person</h2>
-    <p>This type gives the count of persons. It has two values, i.e. min and max.</p>
-    PERSON: <input type="number" name="person_count" min="1" max="15">
-    <h2>Data Type - Search</h2>
-    <p>This type enables the user to make search.</p>
-    SEARCH: <input type="search" name="search_file">
-    <h2>Data Type - Color</h2>
-    <p>This type enables the user to pick a color.</p>
-    COLOR PICKER: <input type="color" name="color_picker">
-    <h2>Data Type - File</h2>
-    <p>This type enables the user to upload a file or image.</p>    
-    <p>If we use attribute 'accept', we may have specified that type of upload material.</p>
-    <p>If we use attribute 'multiple', we may have multiple files or images uploaded.</p>
-    UPLOAD PICTURE: <input type="file" name="upload_photo" accept="image/*" multiple>
-    <h3>Data Type - Hidden</h3>
-    <p>This data type hid the required field from the user. For example, we want to hid from user from which page an 
-    order is placed, this can be done by using hidden data type.</p>
-    <input type="hidden" name="source" value="page's address">
+        <h2>Data Type - Text</h2>
+        <p>This type is used for writing alphanumeric materials in single line.</p>
+        <p>It has two semantic attributes, namely 'name' and 'value'.</p>
+        <p>It has three more attributes, namely 'size', 'maxlength' and 'autofocus'.</p>
+        <p>Attribute 'name' tells the browser about the purpose of data.</p>
+        <p>Attribute 'value' has tow aspects, i.e. first facilitate the browser how to react and
+        second tells the user what to write.</p>
+        <p>Attribute 'size' fix the size of input field, yet it may be done by using CSS now.</p>
+        <p>Attribute 'maxlength' fix the length of characters to be entered by user.</p>
+        <p>Attribute 'autofocus' focus the input field when a form load.</p>
+        <p>If we want a field mandatory, use 'required' attribute.</p>
+        NAME: <input type="text" name="user_name" value="write your name here..." maxlength="10" 
+        autofocus required>
+        <h2>Data Type - Textarea</h2>
+        <p>This type is used for writing alphanumeric materials in multiple lines. It has opening
+        as well as closing tags.</p>
+        <p>It has three attributes, i.e. cols, rows and placeholder.</p>
+        <p>Attributes 'cols' and 'rows' used to specify the width and height of textarea field, 
+        yet yet it may be done by using CSS now.</p>
+        <p>Attribute 'placeholder' is used to write a message by the user.</p>
+        <textarea name="comments" rows=5 cols=30 placeholder="write about you ... "></textarea>
+        <p>If attribute 'placeholder' is left empty no message will be shown.</p>
+        <textarea name="comments" rows=5 cols=30 placeholder=" "></textarea>
+        <p>If attribute 'placeholder' is set for readonly, in that case, the user is unable to 
+        erase data inside it.</p>
+        <textarea name="message" rows=5 cols=30 placeholder="This is only readable message." 
+        readonly></textarea>
+        <p>If attribute 'placeholder' is set for disabled, in that case, cursor has no effect on
+        this area.</p>
+        <textarea name="instruction" rows=5 cols=30 placeholder="Before submitting, read the 
+        instructions carefully." disabled></textarea>
+        <h2>Data Type - E-Mail</h2>
+        <p>This type is used to write e-mail.</p>
+        E-MAIL: <input type="email" name="email_address" size="30">
+        <h2>Data Type - Password</h2>
+        <p>This type is used to write password.</p>
+        PASSWORD: <input type="password" name="password" required>
+        <h2>Data Type - Tel</h2>
+        <p>This type is used to write telephone number.</p>
+        MOBILE: <input type="tel" name="user_phone" maxlength="13">
+        <h2>Data Type - URL</h2>
+        <p>This type is used to write the address of a web-site.</p>
+        WEBSITE: <input type="url" name="web_address">
+        <h2>Data Type - Date</h2>
+        <p>This type provides complete date.</p>
+        DoB: <input type="date" name="birth_date">
+        <h2>Data Type - Month</h2>
+        <p>This type provides the name of month with current year only.</p>
+        MOB: <input type="month" name="birth_month">
+        <h2>Data Type - Week</h2>
+        <p>This type provides the number of week of current year.</p>
+        WEEK: <input type="week" name="week">
+        <h2>Data Type - Time</h2>
+        <p>This type provides time.</p>
+        TIME: <input type="time" name="time">
+        <h2>Data Type - Datetime</h2>
+        <p>This type provides date and time togather.</p>
+        DATE & TIME: <input type="datetime-local" name="submission_date"><br><br>
+        <h2>Data Type - Radio Button</h2>
+        <p>This type enables the user to choose one option.</p>
+        <p>To achieve the task, we have to make a group, i.e. attribute 'name' is made identical.</p>
+        GENDER: <br><br>
+        Male <input type="radio" name="user_gender" value="m">
+        Female <input type="radio" name="user_gender" value="f">
+        <p>Since Radio button is hard to use by a blind user, therefore, we must use semantic 
+        tag 'label'.</p>
+        <p>we have two methods, i.e. enclosed whole option with label tag or use 'for' 
+        attribute with 'id' attribute.</p>
+        <p>Remember that for and id must have same label or title.</p>
+        GENDER: <br><br>
+        <label for="Male">Male</label>
+        <input id="Male" type="radio" name="user_gender" value="m">
+        <label>Female <input type="radio" name="user_gender" value="f"></label>
+        <h2>Data Type - Checkbox Button</h2>
+        <p>If we have to choose multiple options amongst same items, checkbox type is used.</p>
+        <p>If we use attribute 'checked' that option will remain checked.</p>
+        <p>This option will work for that option before which it is used.</p>
+        LANGUAGE: <br><br>
+        Urdu <input type="checkbox" name="language" checked>
+        English <input type="checkbox" name="language">
+        Other <input type="checkbox" name="language">
+        <h2>Data Type - Number</h2>
+        <p>This type gives the count of persons. It has two values, i.e. min and max.</p>
+        PERSON: <input type="number" name="person_count" min="1" max="15">
+        <h2>Data Type - Search</h2>
+        <p>This type enables the user to make search.</p>
+        SEARCH: <input type="search" name="search_file">
+        <h2>Data Type - Color</h2>
+        <p>This type enables the user to pick a color.</p>
+        COLOR PICKER: <input type="color" name="color_picker">
+        <h2>Data Type - File</h2>
+        <p>This type enables the user to upload a file or image.</p>
+        <p>If we use attribute 'accept', we may have specified that type of upload material.</p>
+        <p>If we use attribute 'multiple', we may have multiple files or images uploaded.</p>
+        UPLOAD PICTURE: <input type="file" name="upload_photo" accept="image/*" multiple>
+        <h3>Data Type - Hidden</h3>
+        <p>This data type hid the required field from the user. For example, we want to hid from
+        user from which page an order is placed, this can be done by using hidden data type.</p>
+        <input type="hidden" name="source" value="page's address">
     </form>
-    </body>
+</body>
 </html>
