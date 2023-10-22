@@ -1,57 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head><title>Col and Colgroup Tags, Parts of Table and Applications of Table</title></head>
-    <body style="background-color:seagreen;">
-        <h1>Parts of Tables</h1>
-        <p>A table has three parts, i.e. head, body and food.</p>
-        <p>All these parts can be separated from each and other.</p>
-        <p>For this, we have the following tags:
-            <ul>
-                <li>thead</li>
-                <li>tbody</li>
-                <li>tfoot</li>
-            </ul></p>
-        <p>These tags are semantic and browser will not show their result.</p>
-        <p>Let see, how it look like.</p>
-        <h2>Table 1: Column-Wise Single Head Table - All Parts</h2>
-            <table border=10 bordercolor=blue bgcolor=white cellpadding=5 cellspacing=3 height=400 width=500>
-                <thead>
-                <tr>
-                <th>Sr. No.</th><th>Product's Name</th><th>Quantity</th><th>Unit Price</th><th>Total Price</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>01.</td><td>Rice</td><td>10 KG</td><td>350</td><td>3500</td>
-                </tr>
-                <tr>
-                    <td>02.</td><td>Cooking Oil</td><td>05 KG</td><td>1000</td><td>5000</td>
-                </tr>
-                <tr>
-                    <td>03.</td><td>Milk</td><td>2 Litre</td><td>250</td><td>500</td>
-                </tr>
-                <tr>
-                    <td>04.</td><td>Bread</td><td>01 Piece</td><td>120</td><td>120</td>
-                </tr>
-                <tr>
-                    <td>05.</td><td>Eggs</td><td>01 Dozen</td><td>15</td><td>180</td>
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr>
-                    <td colspan="4">Grand Total</td><td>9300</td>
-                </tr>
-                </tfoot>
-            <caption>Table (Sample-1: Without Control Upon Data Flow)</caption>
-            </table>
-        <h1>How to use col and colgroup tags</h1>
-        <p>Both 'col' tag and 'colgroup' tag used to work with columns</p>
-        <p>Both acts the same. Their attributes are 'span' and 'style'.</p>
-        <p>span attribute refer to number of columns and style attribute does the rest.</p>
-        <p>Tag 'colgroup' can be used with or without col tag.</p>
-        <p>The col tag is an empty element, i.e. have no closing tag.</p>
-        <h2>Use of col and colgroup tags in table</h2>
-        <table border=10 bordercolor=blue bgcolor=white cellpadding=10 cellspacing=5 height=300 width=500>
+<head>
+    <title>Col and Colgroup Tags, Parts of Table and Applications of Table</title>
+</head>
+<body style="background-color:seagreen;">
+    <h1>Parts of Tables</h1>
+    <p>A table has three parts, i.e. head, body and food.</p>
+    <p>All these parts can be separated from each and other.</p>
+    <p>For this, we have the following tags:
+    <ul>
+        <li>thead</li>
+        <li>tbody</li>
+        <li>tfoot</li>
+    </ul>
+    </p>
+    <p>These tags are semantic and browser will not show their result.</p>
+    <p>Let see, how it look like.</p>
+    <h2>Table 1: Column-Wise Single Head Table - All Parts</h2>
+    <table border=10 bordercolor=blue bgcolor=white cellpadding=5 cellspacing=3 height=400 width=500>
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Product's Name</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Total Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01.</td>
+                <td>Rice</td>
+                <td>10 KG</td>
+                <td>350</td>
+                <td>3500</td>
+            </tr>
+            <tr>
+                <td>02.</td>
+                <td>Cooking Oil</td>
+                <td>05 KG</td>
+                <td>1000</td>
+                <td>5000</td>
+            </tr>
+            <tr>
+                <td>03.</td>
+                <td>Milk</td>
+                <td>2 Litre</td>
+                <td>250</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>04.</td>
+                <td>Bread</td>
+                <td>01 Piece</td>
+                <td>120</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>05.</td>
+                <td>Eggs</td>
+                <td>01 Dozen</td>
+                <td>15</td>
+                <td>180</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Grand Total</td>
+                <td>9300</td>
+            </tr>
+        </tfoot>
+        <caption>Table (Sample-1: Without Control Upon Data Flow)</caption>
+    </table>
+    <h1>How to use col and colgroup tags</h1>
+    <p>Both 'col' tag and 'colgroup' tag used to work with columns</p>
+    <p>Both acts the same. Their attributes are 'span' and 'style'.</p>
+    <p>span attribute refer to number of columns and style attribute does the rest.</p>
+    <p>Tag 'colgroup' can be used with or without col tag.</p>
+    <p>The col tag is an empty element, i.e. have no closing tag.</p>
+    <h2>Use of col and colgroup tags in table</h2>
+    <table border=10 bordercolor=blue bgcolor=white cellpadding=10 cellspacing=5 height=300 width=500>
         <colgroup>
             <col span="1" style="background-color:brown;">
             <col span="2" style="background-color:green;">
@@ -60,35 +88,91 @@
 <!--
     The same attribute may be used in colgroup tag
 -->
-            <tr><th>Sr. No.</th><th>Name</th><th>Subject</th><th>Marks</th></tr>
-            <tr><td>01.</td><td>Muhammad</td><td>Maths</td><td>98</td></tr>
-            <tr><td>02.</td><td>Ali</td><td>Maths</td><td>95</td></tr>
-            <tr><td>03.</td><td>Fatima</td><td>Maths</td><td>85</td></tr>
-            <tr><td>04.</td><td>Hassan</td><td>Maths</td><td>84</td></tr>
-            <tr><td>05.</td><td>Hussain</td><td>Maths</td><td>82</td></tr>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <td>01.</td>
+            <td>Muhammad</td>
+            <td>Maths</td>
+            <td>98</td>
+        </tr>
+        <tr>
+            <td>02.</td>
+            <td>Ali</td>
+            <td>Maths</td>
+            <td>95</td>
+        </tr>
+        <tr>
+            <td>03.</td>
+            <td>Fatima</td>
+            <td>Maths</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>04.</td>
+            <td>Hassan</td>
+            <td>Maths</td>
+            <td>84</td>
+        </tr>
+        <tr>
+            <td>05.</td>
+            <td>Hussain</td>
+            <td>Maths</td>
+            <td>82</td>
+        </tr>
         <caption>Table (Sample-2: Without Control Upon Data Flow)</caption>
-        </table>
-        <h1>Application of Tables</h1>
-        <p>From the help of table tag, we can design visiting cards.</p>
-        <h2>Table 2: Visiting Card Shape</h2>
-            <table bgcolor=pink>
-                <tr bgcolor=skyblue>
-                    <td><img src = "C:\Gallery\my_pic1.jpg" width=60><br>
-                    <font size=1>Sole Propretor</font></img></td>
-                    <td>Syed Muhammmad Hussain<br>IT Expert<br>Deals in Networking</td></tr>
-                <tr><td rowspan=2 align=center><font size=3 color=green>START</font></td>
-                    <td bgcolor=red></td></tr>
-                <tr>
-                    <td bgcolor=white align=center><pre><hr size=3 color=green></pre><font color=blue><b><big>
-                    Zahra Manzoor</big></b><br>Sales Manager</font><hr size=3 color=green></td></tr>
-                <tr>
-                    <td colspan=2 align=center bgcolor=seagreen><h1><font color=red>FAST WORKS</font></h1></td>
-                </tr>
-                <tr><td colspan=2 align=center>(Authorized Web Designers)</td></tr>
-                <tr><td colspan=2 align=center>Cell: 0331-5158855, 0317-5407514</td></tr>
-                <tr><td colspan=2 align=center>E-mail: ZahraHussain14@gmail.com</td></tr>
-                <tr bgcolor=blue><td colspan=2 align=center><font color=white>
-                <small>House #5, Street #14, Sector F-6/2, Islamabad</small></font></td></tr>
-            </table>
-    </body>
+    </table>
+    <h1>Application of Tables</h1>
+    <p>From the help of table tag, we can design visiting cards.</p>
+    <h2>Table 2: Visiting Card Shape</h2>
+    <table bgcolor=pink>
+        <tr bgcolor=skyblue>
+            <td><img src="C:\Gallery\my_pic1.jpg" width=60><br>
+                <font size=1>Sole Propretor</font></img>
+            </td>
+            <td>Syed Muhammmad Hussain<br>IT Expert<br>Deals in Networking</td>
+        </tr>
+        <tr>
+            <td rowspan=2 align=center>
+                <font size=3 color=green>START</font>
+            </td>
+            <td bgcolor=red></td>
+        </tr>
+        <tr>
+            <td bgcolor=white align=center>
+                <pre><hr size=3 color=green></pre>
+                <font color=blue><b><big>
+                            Zahra Manzoor</big></b><br>Sales Manager</font>
+                <hr size=3 color=green>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 align=center bgcolor=seagreen>
+                <h1>
+                    <font color=red>FAST WORKS</font>
+                </h1>
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2 align=center>(Authorized Web Designers)</td>
+        </tr>
+        <tr>
+            <td colspan=2 align=center>Cell: 0331-5158855, 0317-5407514</td>
+        </tr>
+        <tr>
+            <td colspan=2 align=center>E-mail: ZahraHussain14@gmail.com</td>
+        </tr>
+        <tr bgcolor=blue>
+            <td colspan=2 align=center>
+                <font color=white>
+                    <small>House #5, Street #14, Sector F-6/2, Islamabad</small>
+                </font>
+            </td>
+        </tr>
+    </table>
+</body>
 </html>
