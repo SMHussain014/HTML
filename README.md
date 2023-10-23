@@ -13,6 +13,8 @@ Press ctrl + Enter
 Type > item_name * No. of items
 * To insert Emoji
 Type windows plus dot and select your desired emoji
+* To move forward or backward selected multiple text
+use Tab to move the text forward and shift + Tab
 
 # Useful Web-sites
 * mdn.com
