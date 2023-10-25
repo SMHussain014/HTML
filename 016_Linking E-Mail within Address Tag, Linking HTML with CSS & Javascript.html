@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Linking E-Mail within Address Tag, Linking CSS & Javascript with HTML</title>
+</head>
+<body style="background-color:skyblue;">
+    <h1>How to link E-Mail</h1>
+    <p>E-mail can also be used as a hyperlink.</p>
+    <p>To do this: use anchor tag's attribute 'href' with another attribute 'mailto'.</p>
+    <p>The syntax is, open anchor tag, use attribute href, assign its value 
+    mailto:full_e-mail_address, write text link between both tags, close anchor tag.</p>
+    <a href="mailto: education@piaic.org">EMAIL PIAIC</a><br>
+    <a href="mailto: hussain.sm014@gmail.com">MY EMAIL</a>
+    <h1>Address Tag</h1>
+    <p>This tag contains only specific information about the author of a web-page or an article.</p>
+    <p>This tag usually have physical address, phone number and email address.</p>
+    <p>The print/result of this tag will be displayed as italic (semantic in nature).</p>
+    <address>
+        <p><a href="mailto: hussain.sm014@gmail.com">Author: Syed Muhammad Hussain</a></p>
+        <p>Azad Jammu and kashmir Council Secretariat, Sector F-5/2, Islamabad</p>
+        <p>Contact at: 051-9203201</p>
+    </address>
+    <h1>Script and Noscript Tags</h1>
+    <p>This tag is used, either in head or body, to create a link between HTML & JavaScript.</p>
+    <p>We have two techniques to use client side script, i.e. in-page script & external script.</p>
+    <p>It has four attributes, namely type, src, async and defer.</p>
+    <p>Attribute 'type' tells the browser what type of programming language is to be used.</p>
+    <p>Attribute 'src' provides the path from where a programming file exists.</p>
+    <p>Attributes 'async' and 'defer' provides the method how to execute the programming language.</p>
+    <p>If method 'async' is used, the web-site will be loaded first and then the programming language.</p>
+    <p>The method 'defer' reverse the above process.</p>
+    <p>If browser does not support a programming language, then noscript tag will be executed.</p>
+    <script type="text/Javascript"; async="true" src="index.js">
+        document.write("This is JavaScript's Display.");</script>
+    <noscript><p>This browser does not support JavaScript.</p></noscript>
+    <h1>Link Tag</h1>
+    <p>To use source CSS, create a file with extension '.scc' and write the code within it.</p>
+    <p>To run CSS, this style-sheet has to be linked with desired HTML file, like:
+        <link rel="stylesheet" type="text/css" href="file_name.css">
+        <link rel="stylesheet" type="media/css" href="file_name.css"></p>
+    <p>The 'link' tag is written between opening and closing 'head' tag of HTML file.</p>
+</body>
+</html>
