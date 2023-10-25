@@ -58,23 +58,6 @@ ii. where to view the result of that coding.
     with this course.  However, some of its usages may be seen under README file. For further 
     details, please consult 'emmet cheat sheet' on www.google.com.
 
-HTML Tags Ordered Alphabetically
-<article>	Defines an article
-<aside>	Defines content aside from the page content
-<footer>	Defines a footer for a document or section
-<header>	Defines a header for a document or section
-<main>	Specifies the main content of a document
-<section>	Defines a section in a document
-
-HTML Tags
-<article>
-<aside>
-<footer>
-<header>
-<main>
-<output>
-<section>
-
 HTML Element Reference - By Category
 
 Basic HTML
