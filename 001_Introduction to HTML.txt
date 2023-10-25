@@ -61,32 +61,19 @@ ii. where to view the result of that coding.
 HTML Tags Ordered Alphabetically
 <article>	Defines an article
 <aside>	Defines content aside from the page content
-<data>	Adds a machine-readable translation of a given content
-<details>	Defines additional details that the user can view or hide
-<dialog>	Defines a dialog box or window
-<div>	Defines a section in a document
 <footer>	Defines a footer for a document or section
 <header>	Defines a header for a document or section
 <main>	Specifies the main content of a document
-<output>	Defines the result of a calculation
 <section>	Defines a section in a document
-<span>	Defines a section in a document
-<summary>	Defines a visible heading for a <details> element
 
 HTML Tags
 <article>
 <aside>
-<data>
-<details>
-<dialog>
-<div>
 <footer>
 <header>
 <main>
 <output>
 <section>
-<span>
-<summary>
 
 HTML Element Reference - By Category
 

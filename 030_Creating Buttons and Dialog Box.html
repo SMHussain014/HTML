@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Creating Buttons and Dialog Box</title>
+        <style>BODY{background-color:pink;}</style>
+    </head>
+    <body>
+    <h1>How to create Buttons with Labels</h1>
+    <p>A button can be created in HTML by using 'button' tag.</p>
+    <p>Alternatively, a button can also be created by using 'input' element.</p>
+    <p>The types are 'reset', 'submit', 'cancel', 'demo' and 'image' etc.</p>
+    <p>Attribute 'name' in case of 'button' tag and attribute 'value' in case of 'input' element must be used.</p>
+    <p>Attribute 'onclick' with value 'alert' may be used to display messages.</p>
+    <p>A button may be made disable by using attribute 'disabled'.</p>
+    <p>A short-key may be associated with a button by using attribute 'accesskey' with its value.</p>
+    <p>To call a button, press alt plus suggested key.</p>
+    <h2>FIRST METHOD</h2>
+    <button type="reset" name="reset" onclick="alert('The Form has been reset.')">RESET</button>
+    <button type="submit" name="submit" onclick="alert('The Form has been submitted.')" accesskey="r">SUBMIT</button>
+    <button type="cancel" name="cancel" onclick="alert('The Form is cancelled.')">CANCEL</button>
+    <button type="demo" name="demo" onclick="alert('The button is disabled.')" disabled>DEMO</button>
+    <h2>SECOND METHOD</h2>
+    <form>
+    RESET: <input type="reset" value="RESET">
+    SUBMIT: <input type="submit" value="SUBMIT">
+    FORWARD:<input type="image" value="url" src="url address" alt="Forward Button" size="30">
+    BACK:<input type="image" value="url" src="url address" alt="Backward Button" size="30">
+    </form>
+    <h1>How to create Dialog Box</h1>
+    <p>A dialog box can be created by using 'dialog' tag.</p>
+    <p>It can be linked to open further inside dialog boxes.</p>
+    <p>Use 'dialog' tag to create pop-up button with attribute 'open'.</p>
+    <dialog open style="border-radius:10px; background-color:red; color:yellow;">Contact Us</dialog><br><br><br><br>
+    <dialog open style="border-radius:10px; color:red;">Chat with Us</dialog>
+    </body>
+</html>
