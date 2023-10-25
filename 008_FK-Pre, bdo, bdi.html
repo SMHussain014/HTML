@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pre, bdo, bdi, Code, Script,Noscript, Meter and Progress Tags</title>
+</head>
+<body style="background-color:skyblue;">
+    <h1>How Pre Tag Functions?</h1>
+    <p>It defines preformatted text.</p>
+    <p>In fact, it tells the browser to use the same formatting as a programmer desires.</p>
+    <pre>
+        <h1 style="color:blue; font-size:18pr; font-family:'Times New Roman', Times, serif">Application For Leave</h1>
+        <p style="color:blue; font-size:12pr; font-family:'Times New Roman', Times, serif">To
+            <b>The Principal,</b>
+            Govt. Islamia High School,
+            <u>Okara City</u><br>
+            Request for one (01) Day Casual Leave.<br>
+            Dear Sir,<br>
+                    With due respect and humble submission, it is stated that the undersigned 
+            has to proceed to his native town to settle some domestic affairs.<br>
+            2.      It is, therefore requested that done day casual leave may kindly be granted
+            in may favour and obliged.
+                                                                Yours obedient Student,
+
+                                                                     (Hussain)</p>
+    </pre>
+    <h1>How to use bdo (Bi-directional Override) Tag</h1>
+    <p>This tag can reverse the direction of text.</p>
+    <p>It has an attribute 'dir', which has two values.</p>
+    <p>Its default value is ltr (left to right). Other value is rtl (right to left).</p>
+    <bdo dir="ltr">This is first test text</bdo><br>
+    <bdo dir="rtl">This is second test text</bdo>
+    <h1>How to use bdi (Bi-direction Isolate Element) Tag</h1>
+    <p>This tag is useful to tackle all languages which are written from right to left.</p>
+    <p>My Name is <bdi>"If name is written in Urdu, the direction will be accurate"</bdi>.</p>
+    <h1>Code Tag</h1>
+    <p>This tag is used to display code of a programming language.</p>
+    <p>If this tag is not used, the code may be get executed. To understand, see the following example.</p>
+    <p>This is a sample of JavaScript<br>
+        <code>
+        var a = 10;
+        var b = 20;
+        function xyz(){
+            var c = a + b;
+            print(c);
+        };
+        xyz();
+        </code></p>
+    <h1>Script and Noscript Tags</h1>
+    <p>This tag is used, either in head or body, to create a link between HTML & JavaScript.</p>
+    <p>We have two techniques to use client side script, i.e. in-page script & external script.</p>
+    <p>It has four attributes, namely type, src, async and defer.</p>
+    <p>Attribute 'type' tells the browser what type of programming language is to be used.</p>
+    <p>Attribute 'src' provides the path from where a programming file exists.</p>
+    <p>Attributes 'async' and 'defer' provides the method how to execute the programming language.</p>
+    <p>If method 'async' is used, the web-site will be loaded first and then the programming language.</p>
+    <p>The method 'defer' reverse the above process.</p>
+    <p>If browser does not support a programming language, then noscript tag will be executed.</p>
+    <script type="text/Javascript"; async="true" src="index.js">
+        document.write("This is JavaScript's Display.");</script>
+    <noscript><p>This browser does not support JavaScript.</p></noscript>
+    <h1>Meter Property</h1>
+    <p>This property is used to show the quantities, like temperature etc.</p>
+    <p>It has five attributes namely law, high, min, max and value.</p>
+    <p>Attribute 'value' determine how this property will work. It ranges from 0 to 1.</p>
+    Temp: <meter low="15" high="75" min="0" max="100" value="50"></meter>
+    <h1>Progress Property</h1>
+    <p>This property shows the progress of an event currently in progression.</p>
+    <p>It has two attributes, namely max (which is always fixed) anc value (empty value).</p>
+    <p>It will be operative with JavaScript.</p>
+    Download: <progress max="100" value=" "></progress>
+</body>
+</html>
