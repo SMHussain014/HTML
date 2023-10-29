@@ -12,7 +12,7 @@ Press ctrl + Enter
 * To create multiple items
 Type > item_name * No. of items
 * To insert Emoji
-Type windows plus dot and select your desired emoji
+Press Windows plus dot buttons, emoji will open, then select your desired emoji, and press enter
 * To move forward or backward selected multiple text
 use Tab to move the text forward and shift + Tab
 

@@ -2,18 +2,52 @@
 <html>
 <head>
     <title>Table Tag</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: skyblue;
+            font-family: 'Times New Roman';
+            font-size: 20px;
+        }
+        h1{
+            color: red;
+        }
+        h2{
+            color: blue;
+        }
+        .tab-1{
+            width: 450px;
+            height: 350px;
+            padding: 20px 10px;
+            margin: 30px auto;
+            border: 10px solid green;
+            background-color: yellow;
+            text-align: left;
+            table-layout:inherit
+        }
+        tr{
+            border: 5px solid red;
+        }
+        caption{
+            color: darkgreen;
+        }
+    </style>
 </head>
-<body style="background-color:seagreen;">
+<body>
     <h1>Create a Sample Table</h1>
     <p>A table represents data in grid form. It consists of rows and columns.</p>
     <p>Speaking simply, the table is a collection of rows and columns.</p>
     <p>Every block of grid is known as 'table cell'. In HTML, a table is created row-wise.</p>
-    <p>To create a table, we have table tag, within which, we have three following tags:
+    <p>To create a table, we have table tag, within which, we have three following tags:</p>
     <ul>
         <li>Table Heading (th)</li>
         <li>Table Row (tr)</li>
         <li>Table Data (td)</li>
-    </ul></p>
+    </ul>
     <p>Table Heading (th) may be used for row heading as well as column heading.</p>
     <p>HTML has 'caption' tag to provide captions for tables.</p>
     <p>Before proceeding further, it would be appropriate if we understand two concepts.</p>
@@ -25,7 +59,7 @@
     CSS.</p>
     <p>In this topic, we are about to learn this technique.</p>
     <h2>Table 1: Column-Wise Heading Table</h2>
-    <table border=10 bordercolor=blue bgcolor=yellow cellpadding=5 cellspacing=3 height=350 width=350>
+    <table class= "tab-1" cellpadding=5 cellspacing=3>
         <tr>
             <th>Sr. No.</th>
             <th>Name</th>
@@ -62,8 +96,8 @@
             <td>Maths</td>
             <td>82</td>
         </tr>
+        <caption>Table (Sample-1: Without Control Upon Data Flow)</caption>
     </table>
-    <caption>Table (Sample-1: Without Control Upon Data Flow)</caption><br>
     <h2>Table 2: Row-Wise and Column-Wise Heading Table</h2>
     <table border=10 bordercolor=blue bgcolor=yellow cellpadding=5 cellspacing=3 height=350 width=400>
         <tr align="left">
